@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -18,7 +19,7 @@ namespace NumberSortingWebApp
         protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
             TextBox2.Text = "";
-            Console.WriteLine("tb1_tc_loki");
+            
 
         }
 
@@ -34,6 +35,7 @@ namespace NumberSortingWebApp
             else
             {
                 TextBox2.Text = "Please enter some text.Example: 4,1,-5,2,0";
+                TextBox2.ForeColor=Color.Red;
             }
 
             

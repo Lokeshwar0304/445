@@ -29,8 +29,7 @@ namespace SortStringNumbers
                 return string.Join(",", array);
             }
             catch(Exception ex)
-            {
-                //throw new Exception(ex.Message);
+            {               
                 return ex.Message;
             }
             

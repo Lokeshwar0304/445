@@ -16,12 +16,12 @@ namespace TemperatureConventionService
         string GetData(int value);
 
 
-        //This method is to convert a Celsius temperature value to Faranheit temperature value
+        //This method is to convert Celsius temperature value to Faranheit temperature value
         [OperationContract]
         int c2f(int c);
 
 
-        //This method is to convert a Faranheit temperature value to Celsius temperature value
+        //This method is to convert Faranheit temperature value to Celsius temperature value
         [OperationContract]
         int f2c(int f);
 

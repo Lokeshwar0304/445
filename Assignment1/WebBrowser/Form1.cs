@@ -19,7 +19,8 @@ namespace WebBrowser
         public Form1()
         {
             InitializeComponent();
-            
+            webBrowser1.Navigate("https://www.google.co.in/");
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -117,5 +118,32 @@ namespace WebBrowser
         {
             if(label1.Text.Length>0) Clipboard.SetText(label1.Text.Split(':')[1]);
         }
+
+        private void quote_btn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (!String.IsNullOrWhiteSpace(quoteTextBox.Text)) 
+                {
+                    label5.Text = "Stock Quote for the " + quoteTextBox.Text.ToUpper() + " is " + stockService.getStockquote(quoteTextBox.Text); //        
+                    label5.Visible = true;
+                }
+                else
+                {
+                    label5.Text = "Please enter a valid stock symbol. Example: GOOG"; 
+                }
+            }
+            catch (Exception ex)
+            {
+                label5.Text = ex.Message.ToString(); 
+            }
+        }
+
+        private void quoteTextBox_TextChanged(object sender, EventArgs e)
+        {
+            label5.Text = "";
+        }
+
+        
     }
 }

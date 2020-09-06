@@ -30,7 +30,7 @@ namespace TemperatureConventionService
             }
             catch(Exception ex)
             {
-                throw new Exception(ex.ToString());
+                throw new Exception(ex.ToString()); // Exception handling
             }
             return conv_value;
         }
@@ -49,7 +49,7 @@ namespace TemperatureConventionService
             }
             catch(Exception ex)
             {
-                throw new Exception(ex.ToString());
+                throw new Exception(ex.ToString()); //Exception handling
             }
             return conv_value;
         }
