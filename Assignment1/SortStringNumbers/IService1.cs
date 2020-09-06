@@ -17,7 +17,6 @@ namespace SortStringNumbers
         string GetData(int value);
 
         // Method to sort a string of numbers, separated by commas
-        //Parameter: string of numbers
         [OperationContract]
         string sort(string s);
         

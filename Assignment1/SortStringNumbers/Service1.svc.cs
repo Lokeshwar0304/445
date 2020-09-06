@@ -8,8 +8,6 @@ using System.Text;
 
 namespace SortStringNumbers
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
-    // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
         public string GetData(int value)
@@ -17,13 +15,25 @@ namespace SortStringNumbers
             return string.Format("You entered: {0}", value);
         }
 
+        //This method is used to sort a string of numeric values.
+        //Input Parameter: String array of numeric values
+        //Output: Sorted array
         public string sort(string s)
         {
-            char[] spearator = { ','};
-            string[] split_string = s.Split(spearator);
-            int[] array = split_string.Select(int.Parse).ToArray();
-            Array.Sort(array);
-            return string.Join(",", array);
+            try
+            {
+                char[] spearator = { ',' };
+                string[] split_string = s.Split(spearator);
+                int[] array = split_string.Select(int.Parse).ToArray();
+                Array.Sort(array);
+                return string.Join(",", array);
+            }
+            catch(Exception ex)
+            {
+                //throw new Exception(ex.Message);
+                return ex.Message;
+            }
+            
         }
     }
 }

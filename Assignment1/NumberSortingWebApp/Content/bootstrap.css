@@ -118,7 +118,7 @@ optgroup,
 select,
 textarea {
   color: inherit;
-  margin: 5px 0 0 0;
+  margin: 44px 0 0 0;
 }
 button {
   overflow: visible;
@@ -1670,6 +1670,9 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+    top: 0px;
+    left: 0px;
+    width: 886px;
 }
 .col-xs-1,
 .col-xs-2,

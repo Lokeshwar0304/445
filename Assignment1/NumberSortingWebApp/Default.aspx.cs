@@ -14,12 +14,29 @@ namespace NumberSortingWebApp
 
         }
 
+        
         protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            SortNumbersService.Service1Client sns = new SortNumbersService.Service1Client();
-            string sorted_numbers = sns.sort(TextBox1.Text);
-            TextBox2.Text = sorted_numbers;
+            TextBox2.Text = "";
+            Console.WriteLine("tb1_tc_loki");
 
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+            if (!String.IsNullOrWhiteSpace(TextBox1.Text))
+            {
+                SortNumbersService.Service1Client sns = new SortNumbersService.Service1Client();
+                string sorted_numbers = sns.sort(TextBox1.Text); // Calls sort function of SortStringNumbersService
+                TextBox2.Text = sorted_numbers;
+            }
+            else
+            {
+                TextBox2.Text = "Please enter some text.Example: 4,1,-5,2,0";
+            }
+
+            
         }
     }
 }
