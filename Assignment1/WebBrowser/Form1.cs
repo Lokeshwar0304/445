@@ -19,7 +19,7 @@ namespace WebBrowser
         public Form1()
         {
             InitializeComponent();
-            webBrowser1.Navigate("https://www.google.co.in/");
+            webBrowser1.Navigate("https://www.google.co.in/"); //Default URL
 
         }
 
@@ -60,7 +60,8 @@ namespace WebBrowser
                 {
 
                     
-                    label1.Text = "Encrypted message: " + encService.Encrypt(encTextBox.Text); //Calls Encrypt method
+                    label1.Text = "Encrypted message: " + encService.Encrypt(encTextBox.Text); //Calls Encrypt method of Encryption Service
+                    label1.ForeColor = Color.Black;
                     copy_btn.Enabled = true;
 
                 }
@@ -68,13 +69,15 @@ namespace WebBrowser
                 else
                 {
                     
-                    label1.Text = "Please enter a message to Encrypt/Decrypt"; 
+                    label1.Text = "Please enter a message to Encrypt/Decrypt";
+                    label1.ForeColor = Color.Red;
                 }
             }
             catch(Exception ex)
             {
                 label1.Text = ex.Message;
-                
+                label1.ForeColor = Color.Red;
+
             }
         }
 
@@ -90,20 +93,23 @@ namespace WebBrowser
                 if (!String.IsNullOrWhiteSpace(encTextBox.Text))
                 {
 
-                    label1.Text = "Decrypted message: " + encService.Decrypt(encTextBox.Text); //Calls Decrypt method
+                    label1.Text = "Decrypted message: " + encService.Decrypt(encTextBox.Text); //Calls Decrypt method of Encryption Service
                     copy_btn.Enabled = true;
+                    label1.ForeColor = Color.Black;
                 }
 
                 else
                 {
 
                     label1.Text = "Please enter a message to Encrypt/Decrypt";
+                    label1.ForeColor = Color.Red;
                 }
             }
             catch (Exception ex)
             {
                 label1.Text = ex.Message;
-                
+                label1.ForeColor = Color.Red;
+
             }
         }
 
@@ -119,23 +125,27 @@ namespace WebBrowser
             if(label1.Text.Length>0) Clipboard.SetText(label1.Text.Split(':')[1]);
         }
 
+        //Stock Quote Button
         private void quote_btn_Click(object sender, EventArgs e)
         {
             try
             {
                 if (!String.IsNullOrWhiteSpace(quoteTextBox.Text)) 
                 {
-                    label5.Text = "Stock Quote for the " + quoteTextBox.Text.ToUpper() + " is " + stockService.getStockquote(quoteTextBox.Text); //        
+                    label5.Text = "Stock Quote for the " + quoteTextBox.Text.ToUpper() + " is " + stockService.getStockquote(quoteTextBox.Text); // Calls getStockquote method of Stock Quote Service  
                     label5.Visible = true;
+                    label5.ForeColor = Color.Black;
                 }
                 else
                 {
-                    label5.Text = "Please enter a valid stock symbol. Example: GOOG"; 
+                    label5.Text = "Please enter a valid stock symbol. Example: GOOG";
+                    label5.ForeColor = Color.Red;
                 }
             }
             catch (Exception ex)
             {
-                label5.Text = ex.Message.ToString(); 
+                label5.Text = ex.Message.ToString();
+                label5.ForeColor = Color.Red;
             }
         }
 

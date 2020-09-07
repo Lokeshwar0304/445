@@ -8,7 +8,7 @@
 <div class="row">
 <asp:TextBox ID="TextBox1" runat="server" Height="50px" OnTextChanged="TextBox1_TextChanged"   ToolTip="Please enter a string of numbers" Width="800px" TextMode="MultiLine"></asp:TextBox>
 <asp:Button ID="Button1" runat="server" Height="50px" Text="Sort" OnClick="Button1_Click" Width="100px"  />
-<asp:TextBox ID="TextBox2" runat="server" Height="50px" ReadOnly="True"  Width="800px" TextMode="MultiLine"></asp:TextBox>
+<asp:TextBox ID="TextBox2" runat="server" Height="50px" ReadOnly="True" ToolTip="Result"  Width="800px" TextMode="MultiLine"></asp:TextBox>
 </div>
 
 

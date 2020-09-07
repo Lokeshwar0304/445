@@ -23,6 +23,7 @@ namespace NumberSortingWebApp
 
         }
 
+        //Called on click of Sort Button to sort the input
         protected void Button1_Click(object sender, EventArgs e)
         {
 
@@ -31,6 +32,7 @@ namespace NumberSortingWebApp
                 SortNumbersService.Service1Client sns = new SortNumbersService.Service1Client();
                 string sorted_numbers = sns.sort(TextBox1.Text); // Calls sort function of SortStringNumbersService
                 TextBox2.Text = sorted_numbers;
+                TextBox2.ForeColor = Color.Black;
             }
             else
             {

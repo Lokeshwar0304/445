@@ -30,7 +30,7 @@ namespace SortStringNumbers
             }
             catch(Exception ex)
             {               
-                return ex.Message;
+                return ex.Message; //Returns error message if there is some exception
             }
             
         }
