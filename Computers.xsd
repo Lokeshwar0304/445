@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+   elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xsd:annotation>
+		<xsd:documentation xml:lang="en"> Distributed Software Development Course </xsd:documentation>
+	</xsd:annotation>
+	<xsd:element name="Computers" >
+		<xsd:complexType>
+			<xsd:sequence maxOccurs="unbounded">
+				<xsd:element name="Computer" minOccurs="1" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Brand" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+							<xsd:element name="Model" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+							<xsd:element name="Year" type="xsd:integer" minOccurs="1" maxOccurs="1"/>
+							<xsd:element name="Processor" minOccurs="1" maxOccurs="1">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Architecture" minOccurs="1" maxOccurs="1">
+											<xsd:complexType>
+												<xsd:all>
+													<xsd:element name="Model" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+													<xsd:element name="Generation" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+												</xsd:all>
+											</xsd:complexType>
+										</xsd:element>
+										<xsd:element name="Clock" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+										<xsd:element name="Cache" type="xsd:string" minOccurs="1" maxOccurs="1"/>		
+									</xsd:sequence>
+									<xsd:attribute name="Threads" type="xsd:integer" use="required"/>
+								</xsd:complexType>
+							</xsd:element>
+							<xsd:element name="Storage" minOccurs="1" maxOccurs="1">
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Cache" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+										<xsd:element name="Main" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+										<xsd:element name="Harddrive" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+									</xsd:sequence>
+								</xsd:complexType>
+							</xsd:element>
+						</xsd:sequence>
+						<xsd:attribute  name="ScreenSize" type="xsd:float" use="optional"/>
+					</xsd:complexType>
+					
+				</xsd:element>
+				
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

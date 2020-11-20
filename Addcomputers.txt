@@ -1,0 +1,63 @@
+ <div style="font-family:Calibri" runat="server">
+        <asp:Label LabelID="label1" runat="server" Text="Enter the URL of an XML(.xml) file" ></asp:Label>
+        <br />
+        <asp:TextBox ID="tbxml" runat="server" Width="868px" ></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label1" runat="server" Text="Computer Details:-  " ></asp:Label>
+        <asp:TextBox ID="tbss" runat="server" Width="216px"  Text="Screen Size"></asp:TextBox>
+        <asp:TextBox ID="tbb" runat="server" Width="583px"  Text="Brand"></asp:TextBox>
+        <asp:TextBox ID="tbm" runat="server" Width="594px"  Text="Model"></asp:TextBox>
+        <asp:TextBox ID="tby" runat="server" Width="213px"  Text="Year"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="Architecture Details:-  " ></asp:Label>
+        <asp:TextBox ID="tbam" runat="server" Width="868px"  Text="Model"></asp:TextBox>
+        <asp:TextBox ID="tbag" runat="server" Width="546px"  Text="Generation"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Processor Details:-  " ></asp:Label>
+        <asp:TextBox ID="tbpt" runat="server" Width="868px"  Text="Threads"></asp:TextBox>
+        <asp:TextBox ID="tbpc" runat="server" Width="868px"  Text="Clock"></asp:TextBox>
+        <asp:TextBox ID="tbpca" runat="server" Width="563px"  Text="Cache"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label4" runat="server" Text="Storage Details:-  " ></asp:Label>
+        <asp:TextBox ID="tbsc" runat="server" Width="960px"  Text="Cache(If Multiple Cache Values Separate by , )"></asp:TextBox>
+        <asp:TextBox ID="tbsm" runat="server" Width="561px"  Text="Main"></asp:TextBox>
+        <asp:TextBox ID="tbshd" runat="server" Width="464px"  Text="Harddrive"></asp:TextBox>
+        <asp:Button OnClick="btnAdd_Click" ID="btnAdd" runat="server" Text="Add" Width="78px" />  
+        <br />
+        <br />
+        <asp:Label ID="lboutput" runat="server" ></asp:Label>
+
+    </div>
+
+
+protected void btnAdd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrWhiteSpace(tbxml.Text))
+                {
+
+                }
+                else
+                {
+                    string[] newCompDetails = {tbss.Text, tbb.Text, tbm.Text,tby.Text,tbam.Text,tbag.Text, tbpt.Text, tbpc.Text, tbpca.Text, tbsc.Text,tbsm.Text,tbshd.Text };
+                    var x = xmlOps.addComputer(tbxml.Text, newCompDetails);
+
+                    Session["output"] = x.ToString();
+                    Response.Redirect("~/Contact.aspx", false);
+
+
+                    
+
+
+                }
+            }
+            catch(Exception ex)
+            {
+
+            }
+        }

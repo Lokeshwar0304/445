@@ -1,0 +1,51 @@
+[
+  
+  {
+    "hospitalID": 1,
+    "hospitalName": "Hospital1",
+    "hospitalAddress": "Tempe",
+    "contact": "480-955-9255",
+    "distance": "40",
+    "rating": "4",
+    "review": [ "Good" ],
+    "bedsAvailable": "6",
+    "ventilatorsAvailable": "9",
+    "testing": "yes"
+  },
+  {
+    "hospitalID": 2,
+    "hospitalName": "Hospital2",
+    "hospitalAddress": "Messa",
+    "contact": "480-955-9256",
+    "distance": "10",
+    "rating": "3",
+    "review": [ "bad", "Worst" ],
+    "bedsAvailable": "5",
+    "ventilatorsAvailable": "4",
+    "testing": "no"
+  },
+  {
+    "hospitalID": 3,
+    "hospitalName": "Hospital3",
+    "hospitalAddress": "Phoenix",
+    "contact": "480-955-9257",
+    "distance": "8",
+    "rating": "3",
+    "review": [ "Average", "Needs Improvement" ],
+    "bedsAvailable": "1",
+    "ventilatorsAvailable": "1",
+    "testing": "yes"
+  },
+  {
+    "hospitalID": 4,
+    "hospitalName": "Hospital4",
+    "hospitalAddress": "Chandler",
+    "contact": "480-955-9258",
+    "distance": "100",
+    "rating": "5",
+    "review": [ "Good", "Best", "Best" ],
+    "bedsAvailable": "10",
+    "ventilatorsAvailable": "7",
+    "testing": "Yes"
+  }
+]

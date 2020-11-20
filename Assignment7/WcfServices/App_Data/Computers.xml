@@ -1,0 +1,476 @@
+<Computers>
+  <Computer ScreenSize="15.4">
+    <Brand>Dell</Brand>
+    <Model>Inspiron</Model>
+    <Year>2020</Year>
+    <Processor Threads="8">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>8</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>128M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>16G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer>
+    <Brand>Dell</Brand>
+    <Model>XPS</Model>
+    <Year>2020</Year>
+    <Processor Threads="9">
+      <Architecture>
+        <Model>i5</Model>
+        <Generation>10</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>64M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>16G</Main>
+      <HardDrive>2T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer>
+    <Brand>HP</Brand>
+    <Model>ENVY X360</Model>
+    <Year>2020</Year>
+    <Processor Threads="10">
+      <Architecture>
+        <Model>i6</Model>
+        <Generation>9</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>256M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Cache>1.5G</Cache>
+      <Main>16G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer>
+    <Brand>MACBOOK</Brand>
+    <Model>AIR</Model>
+    <Year>2019</Year>
+    <Processor Threads="11">
+      <Architecture>
+        <Model>i6</Model>
+        <Generation>10</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>512M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>16G</Main>
+      <HardDrive>2T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer>
+    <Brand>HP</Brand>
+    <Model>ENVY X360</Model>
+    <Year>2020</Year>
+    <Processor Threads="10">
+      <Architecture>
+        <Model>i6</Model>
+        <Generation>9</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>128M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>8G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer>
+    <Brand>MacBook</Brand>
+    <Model>Pro</Model>
+    <Year>2019</Year>
+    <Processor Threads="11">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>11</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>64M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>8G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="16.5">
+    <Brand>ASUS</Brand>
+    <Model>ROG Zephyrus G14</Model>
+    <Year>2019</Year>
+    <Processor Threads="9">
+      <Architecture>
+        <Model>i8</Model>
+        <Generation>9</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>256M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Cache>2G</Cache>
+      <Main>32G</Main>
+      <HardDrive>2T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="15.4">
+    <Brand>HP</Brand>
+    <Model>Elite Dragonfly</Model>
+    <Year>2018</Year>
+    <Processor Threads="7">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>8</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>64M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>8G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="16">
+    <Brand>HP</Brand>
+    <Model>Elite Dragonfly</Model>
+    <Year>2018</Year>
+    <Processor Threads="7">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>8</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>128M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>16G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="10">
+    <Brand>LENOVO</Brand>
+    <Model>CHROMEBOOK DUET</Model>
+    <Year>2018</Year>
+    <Processor Threads="7">
+      <Architecture>
+        <Model>i8</Model>
+        <Generation>9</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>256M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>16G</Main>
+      <HardDrive>2T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="17">
+    <Brand>RAZER</Brand>
+    <Model>BLADE PRO</Model>
+    <Year>2018</Year>
+    <Processor Threads="8">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>8</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>64M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1.5G</Cache>
+      <Main>16G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="13">
+    <Brand>HP</Brand>
+    <Model>SPECTRE X360</Model>
+    <Year>2018</Year>
+    <Processor Threads="8">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>8</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>128M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>8G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer>
+    <Brand>ACER</Brand>
+    <Model>CHROMEBOOK SPIN 713</Model>
+    <Year>2020</Year>
+    <Processor Threads="8">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>10</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>64M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1.5G</Cache>
+      <Main>16G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="15.6">
+    <Brand>GIGABYTE</Brand>
+    <Model>AERO 15</Model>
+    <Year>2019</Year>
+    <Processor Threads="9">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>10</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>256M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>1G</Cache>
+      <Cache>1.5G</Cache>
+      <Main>32G</Main>
+      <HardDrive>2T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer>
+    <Brand>DELL</Brand>
+    <Model>XPS 15</Model>
+    <Year>2020</Year>
+    <Processor Threads="9">
+      <Architecture>
+        <Model>i5</Model>
+        <Generation>8</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>64M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>1.5G</Cache>
+      <Main>16G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer>
+    <Brand>DELL</Brand>
+    <Model>G5 15 SE</Model>
+    <Year>2019</Year>
+    <Processor Threads="8">
+      <Architecture>
+        <Model>i6</Model>
+        <Generation>7</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>256M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>1G</Cache>
+      <Cache>1.5G</Cache>
+      <Main>32G</Main>
+      <HardDrive>2T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="17">
+    <Brand>DELL</Brand>
+    <Model>XPS 17</Model>
+    <Year>2020</Year>
+    <Processor Threads="9">
+      <Architecture>
+        <Model>i9</Model>
+        <Generation>10</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>512M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>2G</Cache>
+      <Main>32G</Main>
+      <HardDrive>2T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="17">
+    <Brand>LG</Brand>
+    <Model>GRAM 17</Model>
+    <Year>2020</Year>
+    <Processor Threads="9">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>10</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>32M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>8G</Main>
+      <HardDrive>512G</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer>
+    <Brand>ACER</Brand>
+    <Model>SWIFT 3</Model>
+    <Year>2019</Year>
+    <Processor Threads="8">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>8</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>128M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>1.5G</Cache>
+      <Main>8G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="15.6">
+    <Brand>ASUS</Brand>
+    <Model>TUF A15</Model>
+    <Year>2019</Year>
+    <Processor Threads="9">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>8</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>128M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1.5G</Cache>
+      <Main>32G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="13.3">
+    <Brand>GOOGLE</Brand>
+    <Model>PIXELBOOK GO</Model>
+    <Year>2018</Year>
+    <Processor Threads="7">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>9</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>128M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Cache>1.5G</Cache>
+      <Main>8G</Main>
+      <HardDrive>1T</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="10">
+    <Brand>ASUS</Brand>
+    <Model>CHROMEBOOK FLIP</Model>
+    <Year>2020</Year>
+    <Processor Threads="7">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>8</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>32M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Main>4G</Main>
+      <HardDrive>128G</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="15.6">
+    <Brand>ASUS</Brand>
+    <Model>VIVOBOOK S15</Model>
+    <Year>2020</Year>
+    <Processor Threads="8">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>8</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>64M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>1G</Cache>
+      <Main>8G</Main>
+      <HardDrive>512G</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="10">
+    <Brand>MICROSOFT</Brand>
+    <Model>SURFACE LAPTOP 3</Model>
+    <Year>2019</Year>
+    <Processor Threads="7">
+      <Architecture>
+        <Model>i7</Model>
+        <Generation>9</Generation>
+      </Architecture>
+      <Clock>4.8GH</Clock>
+      <Cache>64M</Cache>
+    </Processor>
+    <Storage>
+      <Cache>0.5G</Cache>
+      <Cache>1G</Cache>
+      <Main>4G</Main>
+      <HardDrive>256G</HardDrive>
+    </Storage>
+  </Computer>
+  <Computer ScreenSize="Screen Size">
+    <Brand>Brand</Brand>
+    <Model>Model</Model>
+    <Year>Year</Year>
+    <Processor Threads="Threads">
+      <Architecture>
+        <Model>Model</Model>
+        <Generation>Generation</Generation>
+      </Architecture>
+      <Clock>Clock</Clock>
+      <Cache>Cache</Cache>
+    </Processor>
+    <Storage>
+      <Cache>Cache(If Multiple Cache Values Separate by </Cache>
+      <Cache> )</Cache>
+      <Main>Main</Main>
+      <Harddrive>Harddrive</Harddrive>
+    </Storage>
+  </Computer>
+</Computers>

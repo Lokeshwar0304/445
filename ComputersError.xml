@@ -1,0 +1,208 @@
+<Computers>
+<Computer ScreenSize="10">
+<Brand>Microsoft</Brand>
+<Model>Surface Laptop 3</Model>
+<Year>Twenty19</Year>
+<Processor>
+<Architecture>
+<Model>i7</Model>
+<Generation>9</Generation>
+</Architecture>
+<Clock>4.8GH</Clock>
+<Cache>64M</Cache>
+</Processor>
+<Storage>
+<Cache>0.5G</Cache>
+<Cache>1G</Cache>
+<Main>4G</Main>
+<Harddrive>128G</Harddrive>
+</Storage>
+</Computer>
+<Computer>
+<Brand>Acer</Brand>
+<Model>Swift 3</Model>
+<Year>2019</Year>
+<Processor >
+<Architecture>
+<Generation>8</Generation>
+</Architecture>
+<Clock>4.8GH</Clock>
+<Cache>128M</Cache>
+</Processor>
+<Storage>
+<Cache>1.5G</Cache>
+<Main>8G</Main>
+<Harddrive>500G</Harddrive>
+</Storage>
+</Computer>
+<Computer ScreenSize="17">
+<Brand>Dell</Brand>
+<Model>XPS 17</Model>
+<Year>2020</Year>
+<Processor Threads="Nine">
+<Architecture>
+<Model>i9</Model>
+<Generation>10</Generation>
+</Architecture>
+<Clock>4.8GH</Clock>
+<Cache>512M</Cache>
+</Processor>
+<Storage>
+<Cache>0.5G</Cache>
+<Cache>2G</Cache>
+<Main>32G</Main>
+<Harddrive>2T</Harddrive>
+</Storage>
+</Computer>
+<Computer>
+<Brand>Dell</Brand>
+<Model>G5 15 </Model>
+<Year>2019</Year>
+<Processor Threads="8">
+<Architecture>
+<Model>i6</Model>
+<Generation>7</Generation>
+</Architecture>
+<Clock>4.8GH</Clock>
+<Cache>256M</Cache>
+</Processor>
+<Storage>
+<Cache>1G</Cache>
+<Cache>1.5G</Cache>
+<Main>32G</Main>
+<Harddrive>1T</Harddrive>
+</Storage>
+</Computer>
+<Computer ScreenSize="15.6">
+<Brand>GigaByte</Brand>
+<Model>AERO 15</Model>
+<Year>2019</Year>
+<Processor Threads="9">
+<Architecture>
+<Model>i7</Model>
+<Generation>10</Generation>
+</Architecture>
+<Clock>4.8GH</Clock>
+<Cache>256M</Cache>
+</Processor>
+<Storage>
+<Cache>1G</Cache>
+<Cache>1.5G</Cache>
+<Main>32G</Main>
+<Harddrive>1T</Harddrive>
+</Storage>
+</Computer>
+<Computer ScreenSize="15.4">
+<Brand>Dell</Brand>
+<Model>Inspiron</Model>
+<Processor Threads="8">
+<Architecture>
+<Model>i7</Model>
+<Generation>8</Generation>
+</Architecture>
+<Clock>4.8GH</Clock>
+<Cache>128M</Cache>
+</Processor>
+<Storage>
+<Cache>0.5G</Cache>
+<Cache>1G</Cache>
+<Main>16G</Main>
+<Harddrive>1T</Harddrive>
+</Storage>
+</Computer>
+<Computer>
+<Brand>Dell</Brand>
+<Model>Inspiron</Model>
+<Year>2019</Year>
+<Processor Threads="8">
+<Architecture>
+<Model>i7</Model>
+<Generation>10</Generation>
+</Architecture>
+<Clock>4.8GH</Clock>
+<Cache>128M</Cache>
+</Processor>
+<Storage>
+<Cache>0.5G</Cache>
+<Cache>1.5G</Cache>
+<Main>32G</Main>
+<Harddrive>1T</Harddrive>
+</Storage>
+</Computer>
+<Computer>
+<Brand>HP</Brand>
+<Model>ENVY X360</Model>
+<Year>2020</Year>
+<Processor Threads="10">
+<Architecture>
+<Model>I6</Model>
+<Generation>9</Generation>
+</Architecture>
+<Cache>256M</Cache>
+</Processor>
+<Storage>
+<Cache>0.5G</Cache>
+<Cache>1G</Cache>
+<Cache>1.5G</Cache>
+<Main>16G</Main>
+<Harddrive>1T</Harddrive>
+</Storage>
+</Computer>
+<Computer>
+<Brand>MacBook</Brand>
+<Model>AIR</Model>
+<Year>2019</Year>
+<Processor Threads="11">
+<Architecture>
+<Model>i6</Model>
+<Generation>10</Generation>
+</Architecture>
+<Clock>4.8GH</Clock>
+<Cache>512M</Cache>
+</Processor>
+<Storage>
+<Cache>0.5G</Cache>
+<Cache>1G</Cache>
+<Main>16G</Main>
+<Harddrive>2T</Harddrive>
+</Storage>
+</Computer>
+<Computer>
+<Brand>MacBook</Brand>
+<Model>Pro</Model>
+<Year>2019</Year>
+<Processor Threads="11">
+<Architecture>
+<Model>i7</Model>
+<Generation>11</Generation>
+</Architecture>
+<Clock>4.8GH</Clock>
+<Cache>64M</Cache>
+</Processor>
+<Storage>
+<Cache>0.5G</Cache>
+<Cache>1G</Cache>
+<Main>8G</Main>
+<Harddrive>1T</Harddrive>
+</Storage>
+</Computer>
+<Computer ScreenSize="Sizteen">
+<Brand>ASUS</Brand>
+<Model>ROG Zephyrus G14</Model>
+<Year>2019</Year>
+<Processor Threads="9">
+<Architecture>
+<Model>i8</Model>
+<Generation>9</Generation>
+</Architecture>
+<Clock>4.8GH</Clock>
+<Cache>256M</Cache>
+</Processor>
+<Storage>
+<Caches>1G</Caches>
+<Cache>2G</Cache>
+<Main>32G</Main>
+<HardDrive>1T</HardDrive>
+</Storage>
+</Computer>
+</Computers>

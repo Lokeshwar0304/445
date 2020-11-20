@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{F9B8C2DE-EC48-4744-B302-74C0E1AD3EAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryItWeatherApp", "TryItWeatherApp\TryItWeatherApp.csproj", "{CACD3F4B-C682-46D4-AECA-54A9FE4195EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9B8C2DE-EC48-4744-B302-74C0E1AD3EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B8C2DE-EC48-4744-B302-74C0E1AD3EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B8C2DE-EC48-4744-B302-74C0E1AD3EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B8C2DE-EC48-4744-B302-74C0E1AD3EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACD3F4B-C682-46D4-AECA-54A9FE4195EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACD3F4B-C682-46D4-AECA-54A9FE4195EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACD3F4B-C682-46D4-AECA-54A9FE4195EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACD3F4B-C682-46D4-AECA-54A9FE4195EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC6330E2-3BF6-40D8-92A1-38A634A680F2}
+	EndGlobalSection
+EndGlobal

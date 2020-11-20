@@ -1,0 +1,33 @@
+﻿[
+ {
+  "userName": "lok",
+  "cartName": "lokcart",
+  "products": [
+      {
+        "productName": "Masks",
+        "productQuantity": "4"
+      },
+      {
+        "productName": "sanitizer",
+        "productQuantity": "4"
+      }],
+  "contactNumber":"4809559163",
+  "address": "1215E Vista Del Cerro Dr"
+  },
+  {
+    "userName": "shiva",
+    "cartName": "shivcart",
+    "products": [
+      {
+        "productName": "Masks",
+        "productQuantity": "1"
+      },
+      {
+        "productName": "sanitizer",
+        "productQuantity": "2"
+      }
+    ],
+    "contactNumber": "4809559169",
+    "address": "1216E Vista Del Cerro Dr"
+  }
+]

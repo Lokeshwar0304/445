@@ -1,0 +1,198 @@
+  public string addComputer(string xmlUrl, string[] newCompElement)
+        {
+            
+            try
+            {
+                StringBuilder result = new StringBuilder();
+                bool isExists = false;
+                string xml;
+                string output;
+
+                if (newCompElement.Length>0)
+                {
+
+
+
+                    using (var wc = new WebClient())
+                    {
+                        try
+                        {
+                            xml = wc.DownloadString(xmlUrl); //Downloads the XML document using the URL
+                        }
+                        catch (WebException e)
+                        {
+                            output = "INVALID XML, ERROR:-" + e.Message;
+                            return output;
+                        }
+
+                    }
+
+
+                    var maindoc = XDocument.Load(xmlUrl);
+
+                    var X = maindoc.Element("Computers");
+
+                    foreach (XElement level1Element in X.Elements("Computer"))
+                    {
+                        var brand= level1Element.Element("Brand").Value;
+                        var model = level1Element.Element("Model").Value;
+                        var year = level1Element.Element("Year").Value;
+
+                        
+                        //If a computer node is already present in the tree
+                        if (String.Equals(brand.ToLower(), newCompElement[0].ToLower()) && String.Equals(model.ToLower(), newCompElement[1].ToLower()) && String.Equals(year.ToLower(), newCompElement[2].ToLower()))
+                        {
+                            isExists = true;
+
+                            level1Element.Attribute("ScreenSize").Value = newCompElement[0]; //check for optionality here
+                            level1Element.Element("Brand").Value = newCompElement[1];
+                            level1Element.Element("Model").Value = newCompElement[2];
+                            level1Element.Element("Year").Value = newCompElement[3];
+
+                            foreach(XElement level20Element in level1Element.Elements("Processor"))
+                            {
+                                level20Element.Element("Clock").Value = newCompElement[7];
+                                level20Element.Element("Cache").Value = newCompElement[8];
+                                level20Element.Attribute("Threads").Value = newCompElement[6]; //check for required here
+
+                                foreach (XElement level3Element in level20Element.Elements("Architecture"))
+                                {
+                                    level3Element.Element("Model").Value = newCompElement[4];
+                                    level3Element.Element("Generation").Value = newCompElement[5];
+
+                                }
+                            }
+
+                            foreach(XElement level21Element in level1Element.Elements("Storage"))
+                            {
+                                level21Element.Element("Main").Value = newCompElement[10];
+                                level21Element.Element("Harddrive").Value = newCompElement[11];
+                                level21Element.Elements("Cache").Remove();
+                                //check for multiple or 1
+                                //depending upon that add
+                                level21Element.SetElementValue("Cache", newCompElement[9]);
+                                
+                            }
+
+                            string path = HttpContext.Current.Server.MapPath("~/App_Data/" + "Computers" + ".xml");
+                            level1Element.Save(path);
+                            
+
+                        }
+
+                    }
+                    
+                    //If a computer node doesnt exists in the tree
+                    if(!isExists)
+                    {
+                        XmlDocument xmlDoc = new XmlDocument();
+                        xmlDoc.Load(xmlUrl);
+                        XmlElement elmRoot = xmlDoc.DocumentElement;
+
+                        //*********************** COMPUTER **********************************************
+
+                        XmlElement elmNew = xmlDoc.CreateElement("Computer");
+                        elmRoot.AppendChild(elmNew);
+                        elmNew.SetAttribute("ScreenSize", newCompElement[0]);
+
+
+                                elmNew = xmlDoc.CreateElement("Brand");
+                                var txtVideo = xmlDoc.CreateTextNode(newCompElement[1]);
+                                elmRoot.LastChild.AppendChild(elmNew);
+                                elmRoot.LastChild.LastChild.AppendChild(txtVideo);
+
+                                elmNew = xmlDoc.CreateElement("Model");
+                                txtVideo = xmlDoc.CreateTextNode(newCompElement[2]);
+                                elmRoot.LastChild.AppendChild(elmNew);
+                                elmRoot.LastChild.LastChild.AppendChild(txtVideo);
+
+                                elmNew = xmlDoc.CreateElement("Year");
+                                txtVideo = xmlDoc.CreateTextNode(newCompElement[3]);
+                                elmRoot.LastChild.AppendChild(elmNew);
+                                elmRoot.LastChild.LastChild.AppendChild(txtVideo);
+
+
+                        //*********************** PROCESSOR **********************************************
+
+                        XmlElement elmP = xmlDoc.CreateElement("Processor");
+                        elmRoot.LastChild.AppendChild(elmP);
+                        elmP.SetAttribute("Threads", newCompElement[6]);
+
+                                //*********************** PROCESSOR **********************************************
+                                    XmlElement elmA = xmlDoc.CreateElement("Architecture");
+                                    elmRoot.LastChild.LastChild.AppendChild(elmA);
+
+                                        elmA = xmlDoc.CreateElement("Model");
+                                        txtVideo = xmlDoc.CreateTextNode(newCompElement[4]);
+                                        elmRoot.LastChild.LastChild.LastChild.AppendChild(elmA);
+                                        elmRoot.LastChild.LastChild.LastChild.LastChild.AppendChild(txtVideo);
+
+
+                                        elmA = xmlDoc.CreateElement("Generation");
+                                        txtVideo = xmlDoc.CreateTextNode(newCompElement[5]);
+                                        elmRoot.LastChild.LastChild.LastChild.AppendChild(elmA);
+                                        elmRoot.LastChild.LastChild.LastChild.LastChild.AppendChild(txtVideo);
+
+
+                            elmP = xmlDoc.CreateElement("Clock");
+                            txtVideo = xmlDoc.CreateTextNode(newCompElement[7]);
+                            elmRoot.LastChild.LastChild.AppendChild(elmP);
+                            elmRoot.LastChild.LastChild.LastChild.AppendChild(txtVideo);
+
+
+                            elmP = xmlDoc.CreateElement("Cache");
+                            txtVideo = xmlDoc.CreateTextNode(newCompElement[8]);
+                            elmRoot.LastChild.LastChild.AppendChild(elmP);
+                            elmRoot.LastChild.LastChild.LastChild.AppendChild(txtVideo);
+
+                       
+
+                        //*********************** STORAGE **********************************************
+
+                        XmlElement elmS = xmlDoc.CreateElement("Storage");
+                        elmRoot.LastChild.AppendChild(elmS);
+
+
+                            foreach (var cache in newCompElement[9].Split(','))
+                            {
+                                elmS = xmlDoc.CreateElement("Cache");
+                                txtVideo = xmlDoc.CreateTextNode(cache);
+                                elmRoot.LastChild.LastChild.AppendChild(elmS);
+                                elmRoot.LastChild.LastChild.LastChild.AppendChild(txtVideo);
+                            }
+
+                            elmS = xmlDoc.CreateElement("Main");
+                            txtVideo = xmlDoc.CreateTextNode(newCompElement[10]);
+                            elmRoot.LastChild.LastChild.AppendChild(elmS);
+                            elmRoot.LastChild.LastChild.LastChild.AppendChild(txtVideo);
+
+
+                            elmS = xmlDoc.CreateElement("Harddrive");
+                            txtVideo = xmlDoc.CreateTextNode(newCompElement[11]);
+                            elmRoot.LastChild.LastChild.AppendChild(elmS);
+                            elmRoot.LastChild.LastChild.LastChild.AppendChild(txtVideo);
+
+                        string path = HttpContext.Current.Server.MapPath("~/App_Data/" + "Computers" + ".xml");
+                        xmlDoc.Save(path);
+
+
+                        using (var stringWriter = new StringWriter())
+                        using (var xmlTextWriter = XmlWriter.Create(stringWriter))
+                        {
+                            xmlDoc.WriteTo(xmlTextWriter);
+                            xmlTextWriter.Flush();
+                            return stringWriter.GetStringBuilder().ToString();
+                        }
+
+                    }
+
+                    
+                    
+                }
+                return "";
+            }
+            catch
+            {
+                return "";
+            }
+        }

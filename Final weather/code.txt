@@ -1,0 +1,46 @@
+protected void b1_Click(object sender, EventArgs e)
+        {
+            NameValueCollection parameters = new NameValueCollection();
+            // Create the base address to the Energy Service
+            Uri baseUri = new Uri("https://localhost:44328/Home/");
+        // Define UriTemplate for passing parameter
+        //https://localhost:44328/Home/Weather5day/?zipcode=85281
+            UriTemplate myTemplate = new UriTemplate("Weather5day/?zipcode={zipcode}/");
+            //Checking if the input is Valid
+            Int64 zipcode;
+            if (tb4.Text == "" || tb4.Text == null || !Int64.TryParse(tb4.Text, out zipcode))
+            {
+                errorLabel.Text = "Enter Valid Zipcode"; return;
+            }
+           
+
+            // Assign values to the parameters
+            parameters.Add("zipcode", zipcode.ToString());
+            //Build the complete URI
+            Uri completeUri = myTemplate.BindByName(baseUri, parameters);
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(completeUri.ToString());
+            request.Method = "GET";
+            //Make the rest call
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+
+            // Check the Response Status Code
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                Stream receiveStream = response.GetResponseStream();
+                StreamReader readStream = null;
+
+                if (response.CharacterSet == "")
+                {
+                    readStream = new StreamReader(receiveStream);
+                }
+                else
+                {
+                    readStream = new StreamReader(receiveStream, Encoding.GetEncoding(response.CharacterSet));
+                }
+
+                var text = readStream.ReadToEnd();
+            }
+            
+
+        }

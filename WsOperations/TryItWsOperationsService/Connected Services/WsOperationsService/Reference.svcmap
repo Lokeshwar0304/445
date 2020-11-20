@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9e561964-0fbc-4e29-9271-c7b91f3942be" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52115/WsOperationsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WsOperationsService.xsd" MetadataType="Schema" ID="fc28220c-6cd4-422f-8a1b-bc51b107a270" SourceId="1" SourceUrl="http://localhost:52115/WsOperationsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WsOperationsService1.xsd" MetadataType="Schema" ID="f1f0c360-4ea8-4d65-8fa8-979cc40b7939" SourceId="1" SourceUrl="http://localhost:52115/WsOperationsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="WsOperationsService2.xsd" MetadataType="Schema" ID="83309cab-11b5-4585-8037-c5ab6589066b" SourceId="1" SourceUrl="http://localhost:52115/WsOperationsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WsOperationsService.disco" MetadataType="Disco" ID="f65df356-22d6-49ab-b8d1-70a73d17d7a2" SourceId="1" SourceUrl="http://localhost:52115/WsOperationsService.svc?disco" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="5d368ce5-aa9e-4155-bc37-f25ba71268f9" SourceId="1" SourceUrl="http://localhost:52115/WsOperationsService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
